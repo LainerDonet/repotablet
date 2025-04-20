@@ -1,0 +1,16 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 23fr 1fr;
+    grid-template-rows: 1fr .5fr;
+    grid-template-areas: 
+    "left middle right"
+    "footer footer footer";
+    margin:0;
+    padding: 0;
+    .left{
+        display: flex;
+        flex-direction: column;
+        grid-area: left;
+        background-color: rgb(53, 138, 138);
+    }
+}
