@@ -13,4 +13,21 @@ body{
         grid-area: left;
         background-color: rgb(53, 138, 138);
     }
+    .middle{
+        display: flex;
+        flex-direction: column;
+        grid-area: left;
+        background-color: rgb(138, 53, 134);
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        grid-area: left;
+        background-color: rgb(53, 138, 57);
+    }
+    .footer{
+        display: flex;
+        grid-area: left;
+        background-color: rgb(132, 138, 53);
+    }
 }
