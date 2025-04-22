@@ -1,17 +1,29 @@
 body{
     display: grid;
-    grid-template-columns: 1fr 23fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr .5fr;
-    grid-template-areas: 
-    "left middle right"
-    "footer footer footer";
-    margin:0;
-    padding: 0;
+   
+    /*margin:0;
+    padding: 0;*/
     .left{
         display: flex;
         flex-direction: column;
         grid-area: left;
         background-color: rgb(53, 138, 138);
+        &__arriba{
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            &_title{
+                font-size: 2rem;
+                color: white;
+                margin: 0;
+            }
+            &_icon{
+                width: 100px;
+                height: 100px;
+            }
+        }
     }
     .middle{
         display: flex;
@@ -28,6 +40,6 @@ body{
     .footer{
         display: flex;
         grid-area: left;
-        background-color: rgb(132, 138, 53);
+        background-color: rgb(60, 53, 138);
     }
 }

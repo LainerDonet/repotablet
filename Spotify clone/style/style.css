@@ -1,3 +1,46 @@
-
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  /*margin:0;
+  padding: 0;*/
+}
+body .left {
+  display: flex;
+  flex-direction: column;
+  grid-area: left;
+  background-color: rgb(53, 138, 138);
+}
+body .left__arriba {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+body .left__arriba_title {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+}
+body .left__arriba_icon {
+  width: 100px;
+  height: 100px;
+}
+body .middle {
+  display: flex;
+  flex-direction: column;
+  grid-area: left;
+  background-color: rgb(138, 53, 134);
+}
+body .right {
+  display: flex;
+  flex-direction: column;
+  grid-area: left;
+  background-color: rgb(53, 138, 57);
+}
+body .footer {
+  display: flex;
+  grid-area: left;
+  background-color: rgb(60, 53, 138);
+}
 
 /*# sourceMappingURL=style.css.map */
