@@ -2,6 +2,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 0.5fr;
+  grid-template-areas: "left middle right" "footer footer footer";
   /*margin:0;
   padding: 0;*/
 }
@@ -28,18 +29,18 @@ body .left__arriba_icon {
 body .middle {
   display: flex;
   flex-direction: column;
-  grid-area: left;
+  grid-area: middle;
   background-color: rgb(138, 53, 134);
 }
 body .right {
   display: flex;
   flex-direction: column;
-  grid-area: left;
+  grid-area: right;
   background-color: rgb(53, 138, 57);
 }
 body .footer {
   display: flex;
-  grid-area: left;
+  grid-area: footer;
   background-color: rgb(60, 53, 138);
 }
 
