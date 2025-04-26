@@ -9,22 +9,24 @@ body {
 body .left {
   display: flex;
   flex-direction: column;
+  align-items: start;
+  justify-content: center;
   grid-area: left;
-  background-color: rgb(53, 138, 138);
+  background-color: #000000;
 }
 body .left__arriba {
   display: flex;
-  align-items: start;
-  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid #282828;
 }
-body .left__arriba_title {
-  font-size: 2rem;
+body .left__arriba_ico {
+  color: #fff;
+  margin: 10px;
+}
+body .left__arriba_a {
+  font-size: 1rem;
   color: white;
-  margin: 0;
-}
-body .left__arriba_icon {
-  width: 100px;
-  height: 100px;
+  text-decoration: none;
 }
 body .middle {
   display: flex;
@@ -42,6 +44,4 @@ body .footer {
   display: flex;
   grid-area: footer;
   background-color: rgb(60, 53, 138);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
