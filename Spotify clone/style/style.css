@@ -188,17 +188,138 @@ body .middle__arriba_subtitle {
 body .middle__abajo {
   display: flex;
   flex-direction: column;
+  padding: 5px;
 }
 body .middle__abajo_div {
   display: flex;
   justify-content: start;
   align-items: center;
+  gap: 10px;
 }
 body .middle__abajo_img {
   width: 50px;
 }
 body .middle__abajo_ico {
   color: #fff;
+}
+body .middle__abajo_btn {
+  border-radius: 50px;
+  background-color: #505050;
+  width: 120px;
+  height: 40px;
+  border: none;
+  color: #fff;
+}
+body .middle__abajo_title {
+  align-items: start;
+  color: #fff;
+  margin: 10px 0;
+}
+body .middle__abajo_music {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+  justify-content: space-around;
+}
+body .middle__abajo_div1 {
+  display: flex;
+  grid-column: 1;
+  grid-row: 1;
+  gap: 5px;
+}
+body .middle__abajo_div2 {
+  display: flex;
+  grid-column: 2;
+  grid-row: 1;
+  gap: 5px;
+}
+body .middle__abajo_div3 {
+  display: flex;
+  grid-column: 3;
+  grid-row: 1;
+  gap: 5px;
+}
+body .middle__abajo_div4 {
+  display: flex;
+  grid-column: 1;
+  grid-row: 2;
+  gap: 5px;
+}
+body .middle__abajo_div5 {
+  display: flex;
+  grid-column: 2;
+  grid-row: 2;
+  gap: 5px;
+}
+body .middle__abajo_div6 {
+  display: flex;
+  grid-column: 3;
+  grid-row: 2;
+  gap: 5px;
+}
+body .middle__abajo_div7 {
+  display: flex;
+  grid-column: 1;
+  grid-row: 3;
+  gap: 5px;
+}
+body .middle__abajo_div8 {
+  display: flex;
+  grid-column: 2;
+  grid-row: 3;
+  gap: 5px;
+}
+body .middle__abajo_div9 {
+  display: flex;
+  grid-column: 3;
+  grid-row: 3;
+  gap: 5px;
+}
+body .middle__abajo_div10 {
+  display: flex;
+  grid-column: 1;
+  grid-row: 4;
+  gap: 5px;
+}
+body .middle__abajo_div11 {
+  display: flex;
+  grid-column: 2;
+  grid-row: 4;
+  gap: 5px;
+}
+body .middle__abajo_div12 {
+  display: flex;
+  grid-column: 3;
+  grid-row: 4;
+  gap: 5px;
+}
+body .middle__abajo_div13 {
+  display: flex;
+  grid-column: 1;
+  grid-row: 5;
+  gap: 5px;
+}
+body .middle__abajo_div14 {
+  display: flex;
+  grid-column: 2;
+  grid-row: 5;
+  gap: 5px;
+}
+body .middle__abajo_div15 {
+  display: flex;
+  grid-column: 3;
+  grid-row: 5;
+  gap: 5px;
+}
+body .middle__abajo_musicimg {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+body .middle__abajo_txt {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body .right {
   display: flex;
