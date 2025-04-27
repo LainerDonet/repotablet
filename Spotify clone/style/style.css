@@ -119,6 +119,7 @@ body .middle__arriba {
   background-position: center;
   background-repeat: no-repeat;
   background-position-y: 5%;
+  padding: 5px;
 }
 body .middle__arriba_btn {
   border-radius: 50px;
@@ -178,9 +179,26 @@ body .middle__arriba_veriftxt {
 }
 body .middle__arriba_maintitle {
   margin: 0;
+  font-size: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body .middle__arriba_subtitle {
   margin: 0;
+}
+body .middle__abajo {
+  display: flex;
+  flex-direction: column;
+}
+body .middle__abajo_div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+body .middle__abajo_img {
+  width: 50px;
+}
+body .middle__abajo_ico {
+  color: #fff;
 }
 body .right {
   display: flex;
