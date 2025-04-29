@@ -325,12 +325,79 @@ body .right {
   display: flex;
   flex-direction: column;
   grid-area: right;
-  background-color: rgb(53, 138, 57);
+  background-color: #2c2c2c;
+}
+body .right__arriba {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+body .right__arriba_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .right__arriba_artist {
+  color: #fff;
+  margin: 0;
+}
+body .right__arriba_ico {
+  color: #fff;
+}
+body .right__arriba_img {
+  width: 500px;
+  height: 400px;
+}
+body .right__arriba_data {
+  display: flex;
+  justify-content: space-between;
+}
+body .right__arriba_title {
+  color: #fff;
+  margin: 0;
+}
+body .right__arriba_txt {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+body .right__abajo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-radius: 20px;
+  background-color: red;
+}
+body .right__abajo_bg {
+  background-image: url(../img/clodplay.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  height: 200px;
+}
+body .right__abajo_inf {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+body .right__abajo_ptxt1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .right__abajo_artistitle {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+body .right__abajo_ptxt2 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 body .footer {
   display: flex;
   grid-area: footer;
   background-color: rgb(60, 53, 138);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
