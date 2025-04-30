@@ -3,8 +3,11 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 0.5fr;
   grid-template-areas: "left middle right" "footer footer footer";
-  /*margin:0;
-  padding: 0;*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  gap: 5px;
+  background-color: #000000;
 }
 body .left {
   display: flex;
@@ -12,7 +15,6 @@ body .left {
   align-items: start;
   justify-content: center;
   grid-area: left;
-  background-color: #000000;
 }
 body .left__arriba {
   display: flex;
@@ -20,9 +22,10 @@ body .left__arriba {
   align-items: start;
   background-color: #2c2c2c;
   border-radius: 5px;
-  margin: 3px;
+  padding: 10px;
   width: 99%;
   gap: 10px;
+  box-sizing: border-box;
 }
 body .left__arriba_ico {
   color: #fff;
@@ -38,11 +41,12 @@ body .left__abajo {
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #2c2c2c;
   border-radius: 5px;
   margin: 3px;
   width: 99%;
+  height: 100%;
 }
 body .left__abajo_div {
   display: flex;
@@ -220,7 +224,7 @@ body .middle__abajo_music {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 body .middle__abajo_div1 {
   display: flex;
@@ -232,12 +236,14 @@ body .middle__abajo_div2 {
   display: flex;
   grid-column: 2;
   grid-row: 1;
+  justify-content: center;
   gap: 5px;
 }
 body .middle__abajo_div3 {
   display: flex;
   grid-column: 3;
   grid-row: 1;
+  justify-content: center;
   gap: 5px;
 }
 body .middle__abajo_div4 {
@@ -250,12 +256,14 @@ body .middle__abajo_div5 {
   display: flex;
   grid-column: 2;
   grid-row: 2;
+  justify-content: center;
   gap: 5px;
 }
 body .middle__abajo_div6 {
   display: flex;
   grid-column: 3;
   grid-row: 2;
+  justify-content: center;
   gap: 5px;
 }
 body .middle__abajo_div7 {
@@ -268,12 +276,14 @@ body .middle__abajo_div8 {
   display: flex;
   grid-column: 2;
   grid-row: 3;
+  justify-content: center;
   gap: 5px;
 }
 body .middle__abajo_div9 {
   display: flex;
   grid-column: 3;
   grid-row: 3;
+  justify-content: center;
   gap: 5px;
 }
 body .middle__abajo_div10 {
@@ -286,12 +296,14 @@ body .middle__abajo_div11 {
   display: flex;
   grid-column: 2;
   grid-row: 4;
+  justify-content: center;
   gap: 5px;
 }
 body .middle__abajo_div12 {
   display: flex;
   grid-column: 3;
   grid-row: 4;
+  justify-content: center;
   gap: 5px;
 }
 body .middle__abajo_div13 {
@@ -304,12 +316,14 @@ body .middle__abajo_div14 {
   display: flex;
   grid-column: 2;
   grid-row: 5;
+  justify-content: center;
   gap: 5px;
 }
 body .middle__abajo_div15 {
   display: flex;
   grid-column: 3;
   grid-row: 5;
+  justify-content: center;
   gap: 5px;
 }
 body .middle__abajo_musicimg {
@@ -326,6 +340,8 @@ body .right {
   flex-direction: column;
   grid-area: right;
   background-color: #2c2c2c;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 body .right__arriba {
   display: flex;
@@ -339,18 +355,21 @@ body .right__arriba_div {
 }
 body .right__arriba_artist {
   color: #fff;
-  margin: 0;
+  margin: 0 20px;
 }
 body .right__arriba_ico {
   color: #fff;
+  padding-right: 20px;
 }
 body .right__arriba_img {
-  width: 500px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
+  padding: 20px;
 }
 body .right__arriba_data {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
 }
 body .right__arriba_title {
   color: #fff;
@@ -366,20 +385,26 @@ body .right__abajo {
   flex-direction: column;
   justify-content: start;
   border-radius: 20px;
-  background-color: red;
+  background-color: gray;
+  margin: 20px;
 }
 body .right__abajo_bg {
   background-image: url(../img/clodplay.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   height: 200px;
+  padding: 20px;
 }
 body .right__abajo_inf {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+}
+body .right__abajo_ptxt {
+  padding: 20px;
 }
 body .right__abajo_ptxt1 {
   display: flex;
@@ -394,7 +419,15 @@ body .right__abajo_artistitle {
 body .right__abajo_ptxt2 {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  margin: 5px 0;
+}
+body .right__abajo_btn {
+  border-radius: 50px;
+  background-color: #505050;
+  width: 120px;
+  height: 40px;
+  border: none;
+  color: #fff;
 }
 body .footer {
   display: flex;
