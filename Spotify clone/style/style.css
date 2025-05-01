@@ -430,7 +430,61 @@ body .right__abajo_btn {
   color: #fff;
 }
 body .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-area: footer;
-  background-color: rgb(60, 53, 138);
-}/*# sourceMappingURL=style.css.map */
+  background-color: #000000;
+}
+body .footer__left {
+  display: flex;
+  grid-column: 1;
+  justify-content: start;
+  align-items: start;
+}
+body .footer__left_img {
+  width: 30px;
+  height: 30px;
+}
+body .footer__left_div {
+  display: flex;
+  flex-direction: column;
+}
+body .footer__left_title {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+body .footer__left_txt {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+body .footer__left_ico {
+  color: #fff;
+}
+body .footer__middle {
+  display: flex;
+  grid-column: 2;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+body .footer__middle_ico {
+  color: #fff;
+}
+body .footer__middle_timeline {
+  width: 300px;
+}
+body .footer__right {
+  display: flex;
+  grid-column: 3;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+body .footer__right_ico {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
