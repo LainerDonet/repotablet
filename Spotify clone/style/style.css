@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 0.5fr;
+  grid-template-rows: 1fr 0.01fr;
   grid-template-areas: "left middle right" "footer footer footer";
   margin: 0;
   padding: 0;
@@ -225,6 +225,8 @@ body .middle__abajo_music {
   grid-template-rows: repeat(5, 1fr);
   align-items: center;
   justify-content: space-between;
+  margin: 0 20px;
+  gap: 10px;
 }
 body .middle__abajo_div1 {
   display: flex;
@@ -434,16 +436,18 @@ body .footer {
   grid-template-columns: 1fr 2fr 1fr;
   grid-area: footer;
   background-color: #000000;
+  height: 50px;
 }
 body .footer__left {
   display: flex;
   grid-column: 1;
   justify-content: start;
-  align-items: start;
+  align-items: center;
+  gap: 5px;
 }
 body .footer__left_img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
 }
 body .footer__left_div {
   display: flex;
@@ -474,7 +478,7 @@ body .footer__middle_ico {
   color: #fff;
 }
 body .footer__middle_timeline {
-  width: 300px;
+  width: 500px;
 }
 body .footer__right {
   display: flex;
@@ -482,9 +486,8 @@ body .footer__right {
   justify-content: center;
   align-items: center;
   background-color: #000000;
+  gap: 5px;
 }
 body .footer__right_ico {
   color: #fff;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
