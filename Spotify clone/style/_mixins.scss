@@ -1,0 +1,46 @@
+@use "variables";
+
+@mixin cell($column, $row, $colorme) {
+    display: flex;
+    grid-column: $column;
+    grid-row: $row;
+    gap:5px;
+    color: $colorme;
+    font-family: variables.$tipo_de_letra;
+}
+@mixin btnhover(){
+    &:hover{
+        background-color: #1db954;
+        color: #000000;
+        cursor: pointer;
+    }
+}
+
+@mixin resaltar(){
+    &:hover{
+        background-color: gray;
+        cursor: pointer;
+        color: #1db954;
+        .hidenico {
+            display: inline;
+        }
+    }
+    
+}
+@mixin resaltxt(){
+    &:hover{
+        color: #1db954;
+        cursor: pointer;
+    }
+    
+}
+
+@mixin btnresaltado(){
+    &:hover{
+        background-color: #d3dad5;
+        color: #000000;
+        cursor: pointer;
+    }
+    
+}
+

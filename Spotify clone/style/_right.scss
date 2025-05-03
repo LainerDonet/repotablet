@@ -1,0 +1,101 @@
+@use "variables";
+@use "mixins";
+
+.right{
+    display: flex;
+    flex-direction: column;
+    grid-area: right;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    box-sizing: border-box;
+    &__arriba{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        &_div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &_artist{
+            color: variables.$color_de_letra;
+            margin: 10px 20px;
+        }
+        &_ico{
+            color: variables.$color_de_letra;
+            padding-right: 20px;
+        }
+        &_img{
+            width: 400px;
+            height: 300px;
+            padding: 20px;
+        }
+        &_data{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        &_title{
+            color: variables.$color_de_letra;
+            margin: 0;
+        }
+        &_txt{
+            color: variables.$color_de_letra;
+            font-family:  variables.$tipo_de_letra;
+            margin: 0;
+        }
+        
+    }
+    &__abajo{
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+        border-radius: 20px;
+        background-color:gray;
+        margin: 20px;
+        &_bg{
+            background-image: url(../img/clodplay.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: 200px;
+            padding: 20px;
+        }
+        &_inf{
+            color: variables.$color_de_letra;
+            font-family:  variables.$tipo_de_letra;
+            margin: 0;
+        }
+        &_ptxt{
+            padding: 20px;
+        }
+        &_ptxt1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_artistitle{
+            color: variables.$color_de_letra;
+            font-family:  variables.$tipo_de_letra;
+            margin: 0;
+        }
+        &_ptxt2{
+            color: variables.$color_de_letra;
+            font-family:  variables.$tipo_de_letra;
+            margin: 5px 0;
+
+        }
+        &_btn{
+            border-radius: 50px;
+            background-color: #505050;
+            width: 120px;
+            height: 40px;
+            border: none;
+            color: variables.$color_de_letra;
+            @include mixins.btnresaltado();
+        }
+
+    }
+}
